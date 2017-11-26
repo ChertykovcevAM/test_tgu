@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Test-TGU </title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="javascript/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="javascript/coordinates.js" type="text/javascript"></script>
+		<script src="javascript/query_insert.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="left_panel">
+			<div class="form_place">
+				<form method="POST" id="first_form" name="first_form">
+					<fieldset>
+						<legend>Определение координат города по его названию:</legend>
+						<div class="main_field">
+							<div class="field">
+								<label for="city_name">Название города:</label>
+								<input id="city_name" name="address_city" size="25" type="text">
+							</div>
+							<div class="field">
+								<label for="latitude">Координата (широта):</label>
+								<input id="latitude" name="coordinate_latitude" size="25" type="text">
+							</div>
+							<div class="field">
+								<label for="longitude">Координата (долгота):</label>
+								<input id="longitude" name="coordinate_longitude" size="25" type="text">
+							</div>		
+							<div class="buttons">
+								<input id="get" value="Получить координаты" type="button">
+								<input id="send" value="Записать в БД" type="button">
+								<!-- "submit" успешно перезагружает страницу -->
+								<input value="Очистить форму" type="reset">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<div>
+					<fieldset>
+						<legend> Примечание по геокодированию: </legend>
+						<strong>Выдержка из "Ограничения API Яндекс.Карт для пользователей геокодера и маршрутизатора":</strong><br>
+						<em>"В сентябре [2015 года] для пользователей HTTP Геокодера, отправляющих запросы без ключа, а также для пользователей JS Геокодера, не передающих рефер или ключ, вступят в силу территориальные ограничения. Геокодирование будет доступно в пределах России, Украины, Беларуси, Казахстана, Грузии, Абхазии, Южной Осетии, Армении, Азербайджана, Молдовы, Туркмении, Таджикистана, Узбекистана, Киргизии и Турции. Если вам нужен поиск за границами этих стран, необходимо получить ключ и отправлять запросы с ним."</em><br>
+						<a href="https://yandex.ru/blog/mapsapi/58741" target="_blank">Актуальная ссылка</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="right_panel">
+			<div class="form_place">
+				<form method="POST" id="second_form" name="second_form">
+					Number 02 <br>
+					(Зарезервировано под расчёт расстояния между городами)
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

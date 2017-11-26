@@ -1,0 +1,50 @@
+body {
+	background: #BEF576;
+	padding: 0.5%;
+}
+
+.left_panel {
+	background: #4d5d53;
+	border-radius: 0.5em;
+	float: left;
+	height: 50%;
+	padding: 0.5%;
+	width: 48.5%;
+}
+
+.form_place {
+	background: #99A89F;
+	border-radius: 0.5em;
+	padding: 0.5%;
+}
+
+.main_field {
+	float: left;
+}
+
+.field {
+	clear: both;
+	line-height: 25px;
+	text-align: right;
+}
+
+.buttons {
+	line-height: 25px;
+	padding-top: 5px;
+}
+
+label
+{
+	float: left;
+	padding-right: 10px;
+}
+
+.right_panel {
+	background: #4d5d53;
+	border-radius: 0.5em;
+	float: right;
+	height: 50%;
+	padding: 0.5%;
+	width: 48.5%;
+}
+
